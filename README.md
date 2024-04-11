@@ -22,6 +22,25 @@ board table
 ![mockdata](https://github.com/rlaclgh/category_test/assets/46914232/26866e4c-c269-434d-b2f1-40dd9d18f3a1)
 
 
+### 코드 설명
+
+db를 h2로 구현했습니다. 
+코드 실행 후 http://127.0.0.1:8080/h2-console 에서      
+jdbc url: jdbc:h2:mem:testdb    
+username: rlaclgh    
+password:    
+에 접속해 확인가능합니다.
+
+
+실행시 초기데이터를 resources/data.sql 파일을 실행함으로 생성했습니다.     
+
+spring data jpa 를 활용해 데이터를 불러왔고, 상대적으로 복잡한 쿼리는 querydsl을 사용해 불러왔습니다. 
+
+
+
+
+
+
 
 
 ### API 설명
