@@ -13,13 +13,11 @@ public class CategoryDTO {
   private Long id;
   private Long parentId;
   private String name;
-  private Integer step;
 
-  public CategoryDTO(Long id, Long parentId, String name, Integer step) {
+  public CategoryDTO(Long id, Long parentId, String name) {
     this.id = id;
     this.parentId = parentId;
     this.name = name;
-    this.step = step;
   }
 
   public CategoryDTO(Category category) {
@@ -33,7 +31,6 @@ public class CategoryDTO {
 
 
     this.name = category.getName();
-    this.step = 1;
   }
 
   private List<CategoryDTO> children = new ArrayList<>();
