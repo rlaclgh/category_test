@@ -250,6 +250,63 @@ v3 응답결과
 
 
 #### /category/{categoryId}
+카테고리를 불러오는 API   
+위 카테고리 리스트를 불러오는 API의 v2로 구현   
+ex) 엑소의 id 2번으로 검색시
+
+```
+// http://127.0.0.1:8080/category/2
+
+{
+  "id": 1,
+  "parentId": null,
+  "name": "남자",
+  "children": [
+    {
+      "id": 2,
+      "parentId": 1,
+      "name": "엑소",
+      "children": [
+        {
+          "id": 4,
+          "parentId": 2,
+          "name": "공지사항",
+          "children": [
+            
+          ]
+        },
+        {
+          "id": 5,
+          "parentId": 2,
+          "name": "챈",
+          "children": [
+            
+          ]
+        },
+        {
+          "id": 6,
+          "parentId": 2,
+          "name": "백현",
+          "children": [
+            
+          ]
+        },
+        {
+          "id": 7,
+          "parentId": 2,
+          "name": "시우민",
+          "children": [
+            
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
 
 
 
@@ -257,3 +314,6 @@ v3 응답결과
 
 
 ## 2. 코인 경우의 수 
+
+
+
